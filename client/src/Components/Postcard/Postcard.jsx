@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Postcard = () => {
     return (
-        <div className='postcard w-[300px] h-420px bg-red-300 rounded-2xl mb-8'>
+        <div className='postcard w-[300px] h-420px bg-red-300 rounded-2xl mb-8 shadow-md'>
             <img src={blogImage} alt="" srcset="" />
             <div className="post-body px-8 py-5">
                 <div className="post-title">
@@ -14,8 +14,8 @@ const Postcard = () => {
                 <div className="post-description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
-                <div className="post-author">
-                    <p className='text-sm italic'>Author Name</p>
+                <div class="text-slate-700 dark:text-slate-500 post-author">
+                    Staff Engineer, Algolia
                 </div>
             </div>
         </div>

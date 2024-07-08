@@ -5,9 +5,12 @@ const PORT = process.env.PORT || 5000;
 const bodyParser = require("body-parser");
 require("dotenv").config();
 const morgan = require("morgan");
-const userRoutes = require("./routes/userRoutes");
+
 const connect = require("./connect");
 
+
+const userRoutes = require("./routes/userRoutes");
+const postRoutes = require("./routes/postRoutes")
 
 app.use(cors());
 
@@ -24,3 +27,4 @@ app.use(express.urlencoded({ extended: true }));
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 
 app.use("/", userRoutes)
+app.use('/posts', postRoutes)
