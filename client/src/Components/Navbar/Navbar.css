@@ -1,0 +1,7 @@
+.nav-links>h1 {
+    cursor: pointer;
+}
+
+.nav-links>h1:hover {
+    text-decoration: underline;
+}
